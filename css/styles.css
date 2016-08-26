@@ -1,0 +1,50 @@
+
+
+h4 {
+  text-align: center;
+  font-size: 4em;
+  font-family: Rubik Mono One;
+  color: #FF3B3F;
+}
+
+h5 {
+  text-align: left;
+  font-size: 2.6em;
+  font-family: Rubik Mono One;
+  color: #A9A9A9;
+}
+
+h1 {
+  font-family: Rubik Mono One;
+  color: #A9A9A9;
+}
+
+.jumbotron {
+  background-color: #FF3B3F;
+}
+
+.container {
+  margin-top: 2%;
+}
+
+.bottomjumbo {
+  margin-top: 3%;
+}
+
+.btn {
+  margin-left: 25%;
+  margin-top: 3%;
+  text-align: center;
+}
+
+.bodywell {
+  background-color: #CAEBF2;
+}
+
+.bottomwell {
+  background-color: #EFEFEF;
+}
+
+.body {
+  background-color: #EFEFEF;
+}
