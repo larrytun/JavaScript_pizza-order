@@ -67,8 +67,8 @@ $(document).ready(function() {
 
     $(".customers-name").append(newPizza.finalName());
     $(".pizzaSize").append(newPizza.finalSize());
-    $(".pizzaToppings").append(newPizza.finalTopping() + ",  ");
-    $(".finalPizzaCost").append(newPizza.finalCost());
+    $(".pizzaToppings").append(newPizza.finalTopping() + "  ");
+    $(".finalPizzaCost").append("$" + newPizza.finalCost());
 
   });
 
