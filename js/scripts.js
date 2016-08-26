@@ -45,8 +45,8 @@ $(document).ready(function() {
 
     $(".newTopping").each(function() {
       var inputtedTopping = $(this).find("#newPizzaToppings :selected").val();
-      var newSingleTopping = new Topping(inputtedTopping)
-      newPizza.toppings.push(newSingleTopping)
+      var newSingleTopping = inputtedTopping;
+      newPizza.toppings.push(newSingleTopping);
     });
 
     $("ul#pizzaPlace").append("<li><span class='pizza'>" + newPizza.finalPizza() +  "</span></li>");
