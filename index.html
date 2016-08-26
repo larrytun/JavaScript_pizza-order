@@ -8,11 +8,6 @@
     <title>Larry's Pizza Place</title>
   </head>
   <body>
-
-    <div class="pizzaOrderDisplay">
-      <p id="finalPizza"> <p>
-    <div>
-
     <div class="container">
       <div class="well">
         <h1>PLACE YOUR ORDER</h1>
@@ -22,12 +17,12 @@
               <label for="new-cutomer-name">Customer Name</label>
               <input type="text" class="form-control" id="new-customer-name">
             </div>
-          <select class="form-control" id="pizzaSize">
+          <select class="form-control" id="newPizzaSize">
             <option>Small</option>
             <option>Medium</option>
             <option>Large</option>
           </select>
-          <select class="form-control" id="pizzaToppings">
+          <select class="form-control" id="newPizzaToppings">
             <option>Cheese</option>
             <option>Pepperoni</option>
             <option>Sausage</option>
@@ -42,6 +37,18 @@
           <button type="submit" class="btn btn-danger">PLACE ORDER</button>
 
         </form>
+
+        <div class="well">
+          <div id="showFinalPizza">
+            <h2></h2>
+            <p>Name on Order: <span class="customer-name"></span></p>
+            <p>Size: <span class="pizzaSize"></span></p>
+            <p>Toppings:</p>
+            <ul id="pizzaToppings">
+
+            </ul>
+          </div>
+        <div>
       </div>
     </div>
   </body>
