@@ -13,24 +13,27 @@
         <h1>PLACE YOUR ORDER</h1>
         <form id="newPizzaOrder">
           <div class="form-group">
-            <div class="form-group">
-              <label for="new-cutomer-name">Customer Name</label>
-              <input type="text" class="form-control" id="new-customer-name">
-            </div>
+            <label for="new-cutomer-name">Customer Name</label>
+            <input type="text" class="form-control" id="new-customer-name">
+          </div>
           <select class="form-control" id="newPizzaSize">
             <option>Small</option>
             <option>Medium</option>
             <option>Large</option>
           </select>
-          <select class="form-control" id="newPizzaToppings">
-            <option>Cheese</option>
-            <option>Pepperoni</option>
-            <option>Sausage</option>
-            <option>Mushrooms</option>
-            <option>Jalapenos</option>
-            <option>Onions</option>
-            <option>Bacon</option>
-          </select>
+          <div id="newToppings">
+            <div class ="newTopping">
+              <select class="form-control" id="newPizzaToppings">
+                <option>Cheese</option>
+                <option>Pepperoni</option>
+                <option>Sausage</option>
+                <option>Mushrooms</option>
+                <option>Jalapenos</option>
+                <option>Onions</option>
+                <option>Bacon</option>
+              </select>
+            </div>
+          </div>
 
           <span class="btn btn-danger" id="addMoreToppings">MORE TOPPINGS</span>
 
@@ -38,7 +41,7 @@
 
         </form>
 
-        <div class="well">
+        <div class="jumbotron">
           <div id="showFinalPizza">
             <h2></h2>
             <p>Name on Order: <span class="customer-name"></span></p>
@@ -47,6 +50,9 @@
             <ul id="pizzaToppings">
 
             </ul>
+            <div class="well well-sm">
+              <h3>TOTAL COST: <span class="finalPizzaCost"></span><p>
+            </div>
           </div>
         <div>
       </div>
