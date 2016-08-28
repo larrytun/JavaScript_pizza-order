@@ -1,5 +1,4 @@
-// BS
-function Pizza (name, size) {
+function Pizza(name, size) {
   this.customerName = name;
   this.pizzaSize = size;
   this.toppings = [];
@@ -7,17 +6,17 @@ function Pizza (name, size) {
 }
 
 Pizza.prototype.finalName = function() {
-  return this.customerName
-}
+  return this.customerName;
+};
 Pizza.prototype.finalSize = function() {
-  return this.pizzaSize
-}
+  return this.pizzaSize;
+};
 Pizza.prototype.finalTopping = function() {
-  return this.toppings
-}
+  return this.toppings;
+};
 Pizza.prototype.finalCost = function() {
-  return this.totalCost
-}
+  return this.totalCost;
+};
 
 
 function Cost(size) {
@@ -33,27 +32,25 @@ function Cost(size) {
 
 
 
-
-
 // UI
 $(document).ready(function() {
+
   $("#addMoreToppings").click(function() {
     $("#newToppings").append('<div class ="newTopping">' +
-                              '<select class="form-control" id="newPizzaToppings">' +
-                                '<option>Cheese</option>' +
-                                '<option>Pepperoni</option>' +
-                                '<option>Sausage</option>' +
-                                '<option>Mushrooms</option>' +
-                                '<option>Jalapenos</option>' +
-                                '<option>Onions</option>' +
-                                '<option>Bacon</option>' +
-                              '</select>' +
-                            '</div>');
+      '<select class="form-control" id="newPizzaToppings">' +
+      '<option>Cheese</option>' +
+      '<option>Pepperoni</option>' +
+      '<option>Sausage</option>' +
+      '<option>Mushrooms</option>' +
+      '<option>Jalapenos</option>' +
+      '<option>Onions</option>' +
+      '<option>Bacon</option>' +
+      '</select>' +
+      '</div>');
   });
 
   $("form#newPizzaOrder").submit(function(event) {
     event.preventDefault();
-    debugger;
 
     var inputtedCustomerName = $("input#new-customer-name").val();
     var inputtedPizzaSize = $("#newPizzaSize :selected").val();
