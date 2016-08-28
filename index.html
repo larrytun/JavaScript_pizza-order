@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
   <head>
     <link href="https://fonts.googleapis.com/css?family=Rubik+Mono+One" rel="stylesheet">
     <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
@@ -8,6 +9,7 @@
     <script src="js/scripts.js"></script>
     <title>Larry's Pizza Place</title>
   </head>
+
   <body>
     <div class="container">
       <div class="well bodywell">
@@ -21,9 +23,9 @@
           <p>Our pizzas include a free cheese topping. Additional toppings $1.50 each.</p>
           <h6>SIZES:</h6>
           <ul>
-            <li>Large:    $15</li>
-            <li>Medium:    $11</li>
-            <li>Small:    $9</li>
+            <li>Large: $15</li>
+            <li>Medium: $11</li>
+            <li>Small: $9</li>
           </ul>
         </div>
         <div class="well orderwell col-sm-6">
@@ -40,10 +42,10 @@
               <option>Large</option>
             </select>
 
-          <div id="newToppings">
-            <div class ="newTopping">
-              <label for="newPizzaToppings">Toppings</label>
-              <select class="form-control" id="newPizzaToppings">
+            <div id="newToppings">
+              <div class="newTopping">
+                <label for="newPizzaToppings">Toppings</label>
+                <select class="form-control" id="newPizzaToppings">
                 <option>Cheese</option>
                 <option>Pepperoni</option>
                 <option>Sausage</option>
@@ -52,13 +54,14 @@
                 <option>Onions</option>
                 <option>Bacon</option>
               </select>
+              </div>
             </div>
-          </div>
         </div>
+        <div class="well">
 
           <button type="submit" class="btn-lg btn-danger">PLACE ORDER</button>
           <span class="btn-lg btn-danger" id="addMoreToppings">MORE TOPPINGS</span>
-
+        </div>
 
 
         </form>
@@ -71,11 +74,13 @@
               <p>Name on Order: <span class="customers-name"></span></p>
               <p>Size: <span class="pizzaSize"></span></p>
               <p>Toppings: <span class="pizzaToppings"></p>
-              <h3>TOTAL COST: <span class="finalPizzaCost"></span><p>
+              <h3>TOTAL COST: <span class="finalPizzaCost"></span>
+                <p>
             </div>
           </div>
-        <div>
-      </div>
-    </div>
+          <div>
+          </div>
+        </div>
   </body>
+
 </html>
