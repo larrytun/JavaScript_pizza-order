@@ -34,7 +34,7 @@ _HTML, CSS, Bootstrap, JQuery, JavaScript_
 | --- | --- | --- |
 | It can record a customers name | Larry | Name on order: Larry |
 | It returns a pizza price based on size | Size: Large  | 1 Large pizza, Cost = $15 |
-| It returns a pizza price based on one topping  | Add topping: Cheese |  1 Large Cheese Pizza, Cost = $15 |
+| It returns a pizza price based on one topping  | Add topping: Pepperoni |  1 Large Pepperoni Pizza, Cost = $15 |
 | It returns a pizza price based on multiple toppings | Toppings: Cheese, pepperoni, mushrooms | 1 Large Cheese, Pepperoni, & Mushroom Pizza, Cost = $18 |
 
 
