@@ -5,6 +5,21 @@ function Pizza(name, size) {
   this.totalCost = 9;
 }
 
+
+Pizza.prototype.sizePrice = function(){
+  if (this.pizzaSize === "Large"){
+    this.totalCost += 6;
+  } else if (this.pizzaSize === "Medium") {
+    this.totalCost += 2;
+  }
+  if (this.toppings.length > 1) {
+    this.totalCost += ((this.toppings.length * 1.5)-1.5);
+    return this.totalCost;
+  } else {
+    return this.totalCost;
+  }
+  
+};
 Pizza.prototype.finalName = function() {
   return this.customerName;
 };
@@ -18,16 +33,6 @@ Pizza.prototype.finalCost = function() {
   return this.totalCost;
 };
 
-
-function Cost(size) {
-  if (newPizzaSize === "Large") {
-    return cost += 6;
-  } else if (newPizzaSize === "Medium") {
-    return cost += 2;
-  } else {
-    return cost;
-  }
-}
 
 
 
@@ -56,16 +61,19 @@ $(document).ready(function() {
     var inputtedPizzaSize = $("#newPizzaSize :selected").val();
     var newPizza = new Pizza(inputtedCustomerName, inputtedPizzaSize);
 
+  
+
     $(".newTopping").each(function() {
       var inputtedTopping = $(this).find("#newPizzaToppings :selected").val();
       var newSingleTopping = inputtedTopping;
       newPizza.toppings.push(newSingleTopping);
+      
     });
 
     $(".customers-name").append(newPizza.finalName());
     $(".pizzaSize").append(newPizza.finalSize());
     $(".pizzaToppings").append(newPizza.finalTopping() + "  ");
-    $(".finalPizzaCost").append("$" + newPizza.finalCost());
+    $(".finalPizzaCost").append("$" + newPizza.sizePrice());
 
   });
 
