@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html>
-
   <head>
     <link href="https://fonts.googleapis.com/css?family=Rubik+Mono+One" rel="stylesheet">
     <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
@@ -9,7 +8,6 @@
     <script src="js/scripts.js"></script>
     <title>Larry's Pizza Place</title>
   </head>
-
   <body>
     <div class="container">
       <div class="well bodywell">
@@ -33,7 +31,7 @@
           <form id="newPizzaOrder">
             <div class="form-group">
               <label for="new-cutomer-name">Customer Name</label>
-              <input type="text" class="form-control" id="new-customer-name">
+              <input type="text" class="form-control" id="new-customer-name" required>
             </div>
             <label for="newPizzaSize">Pizza Size</label>
             <select class="form-control" id="newPizzaSize">
@@ -41,7 +39,6 @@
               <option>Medium</option>
               <option>Large</option>
             </select>
-
             <div id="newToppings">
               <div class="newTopping">
                 <label for="newPizzaToppings">Toppings</label>
@@ -58,15 +55,10 @@
             </div>
         </div>
         <div class="well buttonWell">
-
           <button type="submit" class="btn-lg btn-danger">PLACE ORDER</button>
           <span class="btn-lg btn-danger" id="addMoreToppings">MORE TOPPINGS</span>
         </div>
-
-
         </form>
-
-
         <div class="jumbotron bottomjumbo">
           <div class="well bottomwell">
             <div id="showFinalPizza">
@@ -75,12 +67,10 @@
               <p>Size: <span class="pizzaSize"></span></p>
               <p>Toppings: <span class="pizzaToppings"></p>
               <h3>TOTAL COST: <span class="finalPizzaCost"></span>
-              
             </div>
           </div>
           <div>
           </div>
         </div>
   </body>
-
 </html>
