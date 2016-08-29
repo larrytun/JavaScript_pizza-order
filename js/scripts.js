@@ -56,6 +56,10 @@ $(document).ready(function() {
 
   $("form#newPizzaOrder").submit(function(event) {
     event.preventDefault();
+    $(".pizzaSize").empty();
+    $(".pizzaToppings").empty();
+    $(".customers-name").empty();
+    $(".finalPizzaCost").empty();
 
     var inputtedCustomerName = $("input#new-customer-name").val();
     var inputtedPizzaSize = $("#newPizzaSize :selected").val();
