@@ -1,12 +1,19 @@
-
+label {
+  font-size: 1.5em;
+  font-family: Rubik Mono One;
+  font-weight: 100;
+}
 p {
-  font-size: 1em;
-  font-weight: bold;
+  font-size: 1.5em;
+  font-weight: 100;
+  font-family: Rubik Mono One;
 }
 
 li {
-  font-size: 1em;
-  font-weight: bold;
+  font-size: 1.5em;
+  font-weight: 100;
+  font-family: Rubik Mono One;
+  list-style-type: none;
 }
 
 h2 {
@@ -23,7 +30,6 @@ h4 {
 }
 
 h5 {
-  text-align: left;
   font-size: 3.5em;
   font-family: Rubik Mono One;
   color: #A9A9A9;
@@ -31,7 +37,6 @@ h5 {
 }
 
 h6 {
-  text-align: left;
   font-size: 3.5em;
   font-family: Rubik Mono One;
   color: #A9A9A9;
@@ -41,6 +46,10 @@ h6 {
 h1 {
   font-family: Rubik Mono One;
   color: #A9A9A9;
+}
+
+.buttonWell {
+  margin-left: 50%;
 }
 
 .jumbotron {
@@ -55,9 +64,7 @@ h1 {
   margin-top: 3%;
 }
 
-.btn-lg {
-  margin-left: 25%;
-  margin-top: 3%;
+.pricewell {
   text-align: center;
 }
 
