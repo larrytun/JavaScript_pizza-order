@@ -3,6 +3,7 @@ label {
   font-family: Rubik Mono One;
   font-weight: 100;
 }
+
 p {
   font-size: 1.5em;
   font-weight: 100;
@@ -46,6 +47,10 @@ h6 {
 h1 {
   font-family: Rubik Mono One;
   color: #A9A9A9;
+}
+
+.btn-lg {
+  background-color: #FF3B3F;
 }
 
 .buttonWell {
